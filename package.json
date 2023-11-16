@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "start": "node .eleventy.js",
     "dev": "NODE_ENV=development npx tailwindcss -i src/dev.css -o _site/app.css --watch | npx @11ty/eleventy --serve",
     "build": "NODE_ENV=production TAILWIND_MODE=build npx tailwindcss -i src/dev.css -o _site/app.css | npx @11ty/eleventy"
   },
