@@ -1,0 +1,12 @@
+{
+  "products": [
+    
+      {
+        "id": "/products/my-test-product/",
+        "url": "/products/my-test-product/",
+        "title": "My test product",
+        "price": 109.99
+      }
+    
+  ]
+}
