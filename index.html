@@ -11,20 +11,34 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700&family=Playfair+Display:wght@100;200;300;400;500;600;700&family=Overpass:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="font-sans text-gray-700 antialiased bg-white">
-    <!-- nVBe -->
+    <!-- navbar -->
     <div class="h-24 z-50 relative container mx-auto px-6 grid grid-cols-3">
-        <div x-data="{showMenu: false}" class="flex items-center">
-            <button x-on:click="showMenu = true">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+        <!-- logo -->
+        <div class="flex items-center justify-left ">
+            <a href="/" class="text-white uppercase font-bold text-2xl tracking-widest hidden lg:block">Goodmorning</a>
+        </div>
+    
+        <!-- menu -->
+        <div x-data="{showMenu: false}" class="flex items-center justify-center lg:justify-end">
+            <div class="text-white text-2xl font-bold flex gap-4 items-center lg:justify-center">
+                <a href="/" class="inline-block border-b-4 border-transparent hover:border-yellow-900 lg:border-none">Home</a>
+                <a href="/products" class="inline-block border-b-4 border-transparent hover:border-yellow-900 lg:border-none">Retreats</a>
+                <a href="/pages/about-us" class="inline-block border-b-4 border-transparent hover:border-yellow-900 lg:border-none">Lessen</a>
+                <a href="/blog" class="inline-block border-b-4 border-transparent hover:border-yellow-900 lg:border-none">Over mij</a>
+                <a href="/contact" class="inline-block border-b-4 border-transparent hover:border-yellow-900 lg:border-none">Contact</a>
+            </div>
+            
+            
 
-                    </path>
-                </svg>
-            </button>
+           
+            
+            
+
+
             <div x-show="showMenu" class="fixed inset-0 w-full h-full bg-white z-50 text-yellow-900">
                 <div
                     class="container h-full mx-auto px-6 py-8 relative z-10 flex flex-col items-center justify-center text-2xl uppercase font-bold tracking-widest space-y-6">
@@ -45,7 +59,8 @@
 
                     </a>
                     <a href="/pages/about-us"
-                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Losse lessen & activiteiten
+                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Losse lessen &
+                        activiteiten
 
                     </a>
                     <a href="/blog" class="inline-block border-b-4 border-transparent hover:border-yellow-900">About
@@ -61,20 +76,37 @@
                 </div>
             </div>
         </div>
-        <div class="flex items-center justify-center">
+        <!-- <div class="flex items-center justify-center">
             <a href="/" class="text-white uppercase font-bold text-2xl tracking-widest">Goodmorning
 
             </a>
-        </div>
-        <!-- <div class="flex items-center justify-end">
-            <a href="/cart">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-8 h-8 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                </svg>
-            </a>
         </div> -->
+        
+        <!-- instagram -->
+        <div class="flex items-center justify-end mr-6 ">
+            <div x-data="{ showMenu: false }">
+                <button x-on:click="showMenu = !showMenu" class="hide-on-large">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <a href="/instagram-profile" class="mr-4 hidden lg:block">
+                <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
+            </a>
+            <a href="/facebook-page" class="mr-4 hidden lg:block">
+                <i class="fa fa-facebook-f " style="font-size:48px;color:white"></i>
+            </a>
+        </div>
+        
+        <!-- facebook  -->
+        <div class="flex items-center justify-end">
+
+        </div>
+
+
     </div>
 
     <!-- end navbar -->
@@ -89,7 +121,8 @@
 
             </h1>
             <a href="/blog"
-                class="inline-block bg-yellow-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">Programma & meer info
+                class="inline-block custom-bg-color text-white uppercase text-sm tracking-widest font-heading px-8 py-4">Programma
+                & meer info
 
             </a>
         </div>
@@ -99,57 +132,56 @@
 
             </a>
             <a href="/contact" class="border-b border-white">Contact</a>
-        </div><img
-            src="images/facebook profile picture tess.jpg"a
+        </div><img src="images/facebook profile picture tess.jpg" a
             class="w-full h-full absolute inset-0 object-cover opacity-70">
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="bg-white p-12 md:p-24 flex justify-end items-center"><a href="/blog/this-is-latest-post/"><img
-                    src="images/Facebook profile photo gm ameland rond met zon oranje.png"
-                    class="w-full max-w-md"></a></div>
+                    src="images/Facebook profile photo gm ameland rond met zon oranje.png" class="w-full max-w-md"></a>
+        </div>
         <div class="bg-gray-100 p-12 md:p-24 flex justify-start items-center">
             <div class="max-w-md">
                 <div class="w-24 h-2 bg-yellow-800 mb-4"></div>
                 <h2 class="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">Herontdek jezelf</h2>
-                <p class="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed">Ontsnap aan de drukte met een ontspannend of actief op maat gemaakt weekend retreat op het prachtige Ameland.</p><a href="/blog/this-is-latest-post/"
+                <p class="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed">Ontsnap aan de drukte met
+                    een ontspannend of actief op maat gemaakt weekend retreat op het prachtige Ameland.</p><a
+                    href="/blog/this-is-latest-post/"
                     class="inline-block border-2 border-yellow-800 font-light text-yellow-800 text-sm uppercase tracking-widest py-3 px-8 hover:bg-yellow-800 hover:text-white">retreats</a>
             </div>
         </div>
-    </div><img
-        src="images/helegroeplichter.png"
-        class="w-full h-screen object-cover">
+    </div><img src="images/helegroeplichter.png" class="w-full h-screen object-cover">
     <div class="max-w-xl mx-auto text-center py-24 md:py-32">
         <div class="w-24 h-2 bg-yellow-800 mb-4 mx-auto"></div>
         <h2 class="font-display font-bold text-3xl md:text-4xl lg:text-5xl mb-6">Escape the usual</h2>
-        <p class="font-light text-gray-600 mb-6 leading-relaxed">Yoga, meditatie, surf, wandelen, vrienden/vriendinnen weekend, wildplukken, gezond eten, weekend getaway, lokale producten, eilandleven, cacao, avontuur, rust, natuur, onthaasten, uitdagen, ontdekken, ontmoeten, verkennen, uitwaaien. Op Ameland kan het allemaal.</p>
+        <p class="font-light text-gray-600 mb-6 leading-relaxed">Yoga, meditatie, surf, wandelen, vrienden/vriendinnen
+            weekend, wildplukken, gezond eten, weekend getaway, lokale producten, eilandleven, cacao, avontuur, rust,
+            natuur, onthaasten, uitdagen, ontdekken, ontmoeten, verkennen, uitwaaien. Op Ameland kan het allemaal.</p>
     </div>
     <div class="flex flex-wrap bg-black"><a href="/categories/sandy-beaches/"
             class="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75">
-            <div class="relative z-10">Losse lessen</div><img
-                src="images/yogastrand4pers.jpg"
+            <div class="relative z-10">Losse lessen</div><img src="images/yogastrand4pers.jpg"
                 class="absolute inset-0 w-full h-full object-cover opacity-50">
         </a><a href="/categories/forest-trials/"
             class="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75">
             <div class="relative z-10">Retreats
-            </div><img
-                src="images/sunsetmetmensen.jpg"
-                class="absolute inset-0 w-full h-full object-cover opacity-50">
+            </div><img src="images/sunsetmetmensen.jpg" class="absolute inset-0 w-full h-full object-cover opacity-50">
         </a><a href="/categories/city-streets/"
             class="bg-black relative w-full md:w-auto md:flex-1 flex items-center justify-center h-72 font-heading text-white uppercase tracking-widest hover:opacity-75">
-            <div class="relative z-10">Ameland</div><img
-                src="images/zeemeeuw.JPG"
+            <div class="relative z-10">Ameland</div><img src="images/zeemeeuw.JPG"
                 class="absolute inset-0 w-full h-full object-cover opacity-50">
         </a></div>
     <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="bg-white p-12 md:p-24 flex justify-start items-center"><a href="/blog/this-is-latest-post/"><img
-                    src="images/mereltessvierkant.png"
-                    class="w-full max-w-md"></a></div>
+                    src="images/mereltessvierkant.png" class="w-full max-w-md"></a></div>
         <div class="md:order-first bg-gray-100 p-12 md:p-24 flex justify-end items-center">
             <div class="max-w-md">
                 <div class="w-24 h-2 bg-yellow-800 mb-4"></div>
                 <h2 class="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">Begin je dag goed</h2>
-                <p class="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed">Doe mee met mijn goodmorning yogaflows op het strand van Ameland en gun jezelf het allerbeste begin van je dag.</p><a href="/blog/this-is-latest-post/"
-                    class="inline-block border-2 border-yellow-800 font-light text-yellow-800 text-sm uppercase tracking-widest py-3 px-8 hover:bg-yellow-800 hover:text-white">losse lessen</a>
+                <p class="font-light text-gray-600 text-sm md:text-base mb-6 leading-relaxed">Doe mee met mijn
+                    goodmorning yogaflows op het strand van Ameland en gun jezelf het allerbeste begin van je dag.</p><a
+                    href="/blog/this-is-latest-post/"
+                    class="inline-block border-2 border-yellow-800 font-light text-yellow-800 text-sm uppercase tracking-widest py-3 px-8 hover:bg-yellow-800 hover:text-white">losse
+                    lessen</a>
             </div>
         </div>
     </div>
@@ -157,10 +189,10 @@
         <div class="relative z-10 text-center py-12 md:py-24">
             <h1 class="text-white text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold mb-6">
                 Wat zeggen anderen</h1>
-            <p class="text-white mb-10 text-base md:text-lg font-bold">Op het strand, yoga van Tess. Geen betere manier om de dag te beginnen.</p><a href="/pages/about-us"
+            <p class="text-white mb-10 text-base md:text-lg font-bold">Op het strand, yoga van Tess. Geen betere manier
+                om de dag te beginnen.</p><a href="/pages/about-us"
                 class="inline-block bg-yellow-800 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">Reviews</a>
-        </div><img
-            src="images/tessalleenlichterlunafiltervierkant.png"
+        </div><img src="images/tessalleenlichterlunafiltervierkant.png"
             class="w-full h-full absolute inset-0 object-cover">
     </div>
     <div
@@ -196,6 +228,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js"
         integrity="sha512-06NZg89vaTNvnFgFTqi/dJKFadQ6FIglD6Yg1HHWAUtVFFoXli9BZL4q4EO1UTKpOfCfW5ws2Z6gw49Swsilsg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            /* CSS for screens smaller than medium */
+            @media (max-width: 767px) {
+                .hide-on-small {
+                    display: none;
+                }
+            }
+        
+            /* CSS for medium screens and larger */
+            @media (min-width: 768px) {
+                .show-on-medium {
+                    display: block;
+                }
+            }
+        </style>
+        <style>
+            .hide-on-large {
+                display: block; /* Set the default display property as needed */
+            }
+        
+            @media (min-width: 1024px) {
+                .hide-on-large {
+                    display: none;
+                }
+            }
+            .custom-text-color {
+                color: #178219; /* Replace with your desired color code */
+                }
+                .custom-bg-color {
+                    background-color: #3366cc; /* Replace with your desired color code */
+                    }
+        </style>
 </body>
 
 </html>
