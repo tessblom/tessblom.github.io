@@ -54,28 +54,77 @@
     <div class="w-full h-24 bg-yellow-900 bg-opacity-95 absolute top-0 left-0"></div>
     <div class="text-center py-12 px-6 mt-12">
         <h1 class="font-display font-bold text-5xl mb-6">Lesrooster</h1>
-        <p class="max-w-lg mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.</p>
+        <p class="max-w-lg mx-auto">1 juni 2024 beginnen mijn lessen en activiteiten weer.
+            <br>
+             Houd deze pagina in de gaten om op de hoogte te blijven, of schrijf je in voor mijn nieuwsbrief!</p>
+             <br>
+             <br>
+             <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="newsletter-form">
+        <h2>Schrijf je in voor mijn nieuwsbrief!</h2>
+        <form id="signup-form">
+            <input type="email" id="email" placeholder="Je email adres" required>
+            <button type="submit">Inschrijven</button>
+        </form>
+        <p id="confirmation-msg" style="display: none;">Bedankt voor je inschrijving!</p>
     </div>
-    <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 pt-12 pb-24">
-        <div><a href="/blog/my-first-post/"><img
-                    src="https://images.unsplash.com/photo-1513279922550-250c2129b13a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
-                    class="w-full h-52 md:h-64 lg:h-96 xl:h-64 object-cover"></a>
-            <div class="bg-gray-50 p-8">
-                <div class="text-xs text-gray-600 uppercase font-semibold">01 Sep 2020</div>
-                <h2 class="mt-3 text-3xl mb-6 font-display text-black leading-tight max-w-sm">This is my first post</h2>
-                <p class="mt-4 max-w-md">Capitalize on low hanging fruit to identify a ballpark value added activity to
-                    beta test. Override the digital divide with additional clickthroughs from DevOps.</p><a
-                    href="/blog/my-first-post/"
-                    class="flex items-center mt-6 uppercase text-sm text-black font-semibold">Read article <svg
-                        class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 5l7 7-7 7"></path>
-                    </svg></a>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            // Get the email value
+            const email = document.getElementById('email').value;
+
+            // Here, you can perform additional validation or send the email to a backend for processing
+            // For now, just display a confirmation message
+            document.getElementById('signup-form').style.display = 'none'; // Hide the form
+            document.getElementById('confirmation-msg').style.display = 'block'; // Show the confirmation message
+        });
+    </script>
+</body>
+</html>
+<br>
+<br>
+<!-- <div class="schedule-container">
+    <h2>Weekly Yoga Class Schedule</h2>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Class</th>
+        <th>Instructor</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>9:00 AM - 10:30 AM</td>
+        <td>Hatha Yoga</td>
+        <td>Tess</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>6:00 PM - 7:30 PM</td>
+        <td>Vinyasa Flow</td>
+        <td>Anna</td>
+      </tr>
+      <!-- Add more rows for other days and classes -->
+    </table>
+  </div> -->
+  
             </div>
+            
         </div>
+        
     </div>
     <div
+    
         class="bg-gray-900 text-white text-opacity-40 font-semibold uppercase text-xs tracking-widest bg-opacity-80 px-12">
         <div class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 text-center lg:text-left py-24">
             <div>
@@ -94,7 +143,7 @@
             <div>
                 <div class="font-display text-white uppercase text-sm tracking-widest mb-6">Find out more</div><a
                     href="#" class="block mb-4">About</a> <a href="#" class="block mb-4">Info</a> <a href="#"
-                    class="block mb-4">FAQ</a>
+                    class="block mb-4">FAQ</a> 
             </div>
         </div>
         <div
