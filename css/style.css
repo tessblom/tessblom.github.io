@@ -1,0 +1,63 @@
+/* CSS for screens smaller than medium */
+@media (max-width: 767px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+
+/* CSS for medium screens and larger */
+@media (min-width: 768px) {
+    .show-on-medium {
+        display: block;
+    }
+}
+
+.hide-on-large {
+    display: block;
+    /* Set the default display property as needed */
+}
+
+@media (min-width: 1024px) {
+    .hide-on-large {
+        display: none;
+    }
+}
+
+.custom-text-color {
+    color: #D3956C;
+    /* Replace with your desired color code */
+}
+.custom-text-color {
+    color: #F59F62;
+    /* Replace with your desired color code */
+}.custom-text-color {
+    color: #F2AF42;
+    /* Replace with your desired color code */
+}.custom-text-color {
+    color: #EEBDBE;
+    /* Replace with your desired color code */
+}. custom-text-color {
+    color: #C7E1C3;
+    /* Replace with your desired color code */
+}
+
+.custom-bg-color {
+    background-color: #D3956C;
+    /* Replace with your desired color code */
+}
+.custom-bg-color {
+    background-color: #F59F62;
+    /* Replace with your desired color code */
+}
+.custom-bg-color {
+    background-color: #F2AF42;
+    /* Replace with your desired color code */
+}
+.custom-bg-color {
+    background-color: #EEBDBE;
+    /* Replace with your desired color code */
+}
+.custom-bg-color {
+    background-color: #C7E1C3;
+    /* Replace with your desired color code */
+}
