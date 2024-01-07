@@ -36,7 +36,7 @@ if (!hasSeenModal) {
     document.cookie = 'seenModal=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
 
     // Set a timeout to show the modal after 5 seconds
-    setTimeout(showModal, 1000);
+    setTimeout(showModal, 5000);
 }
 
 // Close the modal when clicking the close button
