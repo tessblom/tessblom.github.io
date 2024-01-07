@@ -11,124 +11,177 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700&family=Playfair+Display:wght@100;200;300;400;500;600;700&family=Overpass:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 
 </head>
 
 <body class="font-sans text-gray-700 antialiased bg-white">
+    <!-- navbar -->
     <div class="h-24 z-50 relative container mx-auto px-6 grid grid-cols-3">
-        <div x-data="{showMenu: false}" class="flex items-center"><button x-on:click="showMenu = true"><svg
-                    class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        <div x-data="{showMenu: false}" class="flex items-center">
+            <button x-on:click="showMenu = true">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+
                     </path>
-                </svg></button>
+                </svg>
+            </button>
+            <!-- menu  -->
             <div x-show="showMenu" class="fixed inset-0 w-full h-full bg-white z-50 text-yellow-900">
                 <div
                     class="container h-full mx-auto px-6 py-8 relative z-10 flex flex-col items-center justify-center text-2xl uppercase font-bold tracking-widest space-y-6">
-                    <button x-on:click="showMenu = false" class="absolute top-0 left-0 mt-8 ml-6"><svg class="w-8 h-8"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <button x-on:click="showMenu = false" class="absolute top-0 left-0 mt-8 ml-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg></button> <a href="/"
-                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Home</a> <a
-                        href="/products"
-                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Products</a> <a
-                        href="/pages/about-us"
-                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">About</a> <a
-                        href="/blog" class="inline-block border-b-4 border-transparent hover:border-yellow-900">Blog</a>
+                                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z">
+
+                            </path>
+                        </svg>
+                    </button>
+                    <a href="/" class="inline-block border-b-4 border-transparent hover:border-yellow-900">Thuis
+
+                    </a>
+                    <a href="/products"
+                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Products
+
+                    </a>
+                    <a href="/pages/about-us"
+                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">About
+
+                    </a>
+                    <a href="/blog" class="inline-block border-b-4 border-transparent hover:border-yellow-900">Blog
+
+                    </a>
                     <a href="/contact"
-                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Contact</a></div>
-                <div class="absolute inset-0 w-full h-full bg-yellow-900 bg-opacity-20"></div>
+                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Contact
+
+                    </a>
+                </div>
+                <div class="absolute inset-0 w-full h-full bg-yellow-900 bg-opacity-20">
+
+                </div>
             </div>
         </div>
-        <div class="flex items-center justify-center"><a href="/"
-                class="text-white uppercase font-bold text-2xl tracking-widest">impulse</a></div>
-        <div class="flex items-center justify-end"><a href="/cart"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                </svg></a></div>
+        <div class="flex items-center justify-center">
+            <a href="/" class="text-white uppercase font-bold text-2xl tracking-widest">Goodmorning
+
+            </a>
+        </div>
+        <div class="flex items-center justify-end">
+            <a href="https://www.instagram.com/goodmorningameland/" class="mr-4 hidden lg:block" target="_blank">
+                <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61551525650912" class="mr-4 hidden lg:block"
+                target="_blank">
+                <i class="fa fa-facebook-f" style="font-size:48px;color:white"></i>
+            </a>
+        </div>
     </div>
+   
+
+
+    <!-- end navbar -->
     <div class="w-full h-24 bg-yellow-900 bg-opacity-95 absolute top-0 left-0"></div>
     <div class="text-center py-12 px-6 mt-12">
         <h1 class="font-display font-bold text-5xl mb-6">Reviews</h1>
         <p class="max-w-lg mx-auto"></p>
     </div>
     <div class="prose prose-sm sm:prose lg:prose-lg mt-6 text-center mx-auto pb-24 px-6">
-        <p><div class="reviews">
+        <p>
+        <div class="reviews">
             <div class="review">
                 <h3>Anoniem</h3>
-                <p>"Bij yoga met Tess kom je vol energie de ochtend uit! Door tegelijk zen te worden en je lichaam te activeren voor de dag, en door echt stil te zijn bij je doelen voor de dag en de dingen die je waardeert, begin je je dag met positiviteit. Ik heb heerlijke sessies beleefd!"</p>
+                <p>"Bij yoga met Tess kom je vol energie de ochtend uit! Door tegelijk zen te worden en je lichaam te
+                    activeren voor de dag, en door echt stil te zijn bij je doelen voor de dag en de dingen die je
+                    waardeert, begin je je dag met positiviteit. Ik heb heerlijke sessies beleefd!"</p>
                 <div class="rating">★★★★★</div>
             </div>
             <div class="reviews">
                 <div class="review">
                     <h3>Merel</h3>
-                    <p>"Ik ken Tess niet heel goed, maar ze geeft een hele positieve energie naar de mensen om haar heen. Ook is haar uitstraling een inspiratie om lekker positief te zijn. Ik vind ook belangrijk dat ze tips geeft tijdens de yoga en dat doet ze! Ze is heel erg bezig met wat voor jou goed voelt en ze speelt in op de omgeving."</p>
+                    <p>"Ik ken Tess niet heel goed, maar ze geeft een hele positieve energie naar de mensen om haar
+                        heen. Ook is haar uitstraling een inspiratie om lekker positief te zijn. Ik vind ook belangrijk
+                        dat ze tips geeft tijdens de yoga en dat doet ze! Ze is heel erg bezig met wat voor jou goed
+                        voelt en ze speelt in op de omgeving."</p>
                     <div class="rating">★★★★★</div>
                 </div>
                 <div class="reviews">
                     <div class="review">
                         <h3>Gesa</h3>
-                        <p>"The outdoor session was truly amazing! It was directly in the dunes of Ameland, a perfect setting in the morning to wake up and get started for the day. Tess was clear in her instructions in English, very calm and friendly. The fact that we gathered at Duinoord and walked to the beach together is perfect for anybody that is not from the island and on vacation. Huge recommendation! (And I am a teacher (for Pilates), too, so I think I know what to expect from teachers ;)"</p>
+                        <p>"The outdoor session was truly amazing! It was directly in the dunes of Ameland, a perfect
+                            setting in the morning to wake up and get started for the day. Tess was clear in her
+                            instructions in English, very calm and friendly. The fact that we gathered at Duinoord and
+                            walked to the beach together is perfect for anybody that is not from the island and on
+                            vacation. Huge recommendation! (And I am a teacher (for Pilates), too, so I think I know
+                            what to expect from teachers ;)"</p>
                         <div class="rating">★★★★★</div>
                     </div>
                     <div class="reviews">
                         <div class="review">
                             <h3>Anoniem</h3>
-                            <p>"Tess haar yoga lessen in de ochtend zijn zoo mega heerlijk. Heerlijke start van de dag."</p>
+                            <p>"Tess haar yoga lessen in de ochtend zijn zoo mega heerlijk. Heerlijke start van de dag."
+                            </p>
                             <div class="rating">★★★★★</div>
                         </div>
                         <div class="reviews">
                             <div class="review">
                                 <h3>Anoniem</h3>
-                                <p>"Goeiemorgen Ameland yoga is een hele fijne manier om 's ochtends de dag te beginnen met een ontspannen inspanning."</p>
+                                <p>"Goeiemorgen Ameland yoga is een hele fijne manier om 's ochtends de dag te beginnen
+                                    met een ontspannen inspanning."</p>
                                 <div class="rating">★★★★★</div>
                             </div>
                             <div class="reviews">
                                 <div class="review">
                                     <h3>Barbara</h3>
-                                    <p>"Great yoga classes for every level on the beautiful beach of Ameland. Thank you Tess for this yoga experience!"</p>
+                                    <p>"Great yoga classes for every level on the beautiful beach of Ameland. Thank you
+                                        Tess for this yoga experience!"</p>
                                     <div class="rating">★★★★★</div>
                                 </div>
                                 <div class="reviews">
                                     <div class="review">
                                         <h3>Koen</h3>
-                                        <p>"Tess is een hele lieve, authentieke en spontane yogi. Ze is kalm, zuiver en weet goed wat ze doet. Met haar warmte maakt ze Ameland nog fijner dan dat het al is!"</p>
+                                        <p>"Tess is een hele lieve, authentieke en spontane yogi. Ze is kalm, zuiver en
+                                            weet goed wat ze doet. Met haar warmte maakt ze Ameland nog fijner dan dat
+                                            het al is!"</p>
                                         <div class="rating">★★★★★</div>
                                     </div>
                                     <div class="reviews">
                                         <div class="review">
                                             <h3>Katarina</h3>
-                                            <p>"I was so not a yoga person and after a few classes Tess changed my perspective about it… my back problem was gone and I never felt better stretched. Thank you very much!"</p>
+                                            <p>"I was so not a yoga person and after a few classes Tess changed my
+                                                perspective about it… my back problem was gone and I never felt better
+                                                stretched. Thank you very much!"</p>
                                             <div class="rating">★★★★★</div>
                                         </div>
                                         <div class="reviews">
                                             <div class="review">
                                                 <h3>Anoniem</h3>
-                                                <p>"Tess kan heel fijn instructies geven aan mij, als iemand die nieuw is met yoga. Ik zou Tess echt aanbevelen."</p>
+                                                <p>"Tess kan heel fijn instructies geven aan mij, als iemand die nieuw
+                                                    is met yoga. Ik zou Tess echt aanbevelen."</p>
                                                 <div class="rating">★★★★★</div>
                                             </div>
                                             <div class="reviews">
                                                 <div class="review">
                                                     <h3>Carmen</h3>
-                                                    <p>"Op het strand, yoga van Tess. Geen betere manier om de dag te beginnen!"</p>
+                                                    <p>"Op het strand, yoga van Tess. Geen betere manier om de dag te
+                                                        beginnen!"</p>
                                                     <div class="rating">★★★★★</div>
                                                 </div>
                                                 <!-- Add more reviews following the same structure -->
                                             </div>
-                                                                                    </div>
-                                                                            </div>
-                                                                    </div>
-                                                            </div>
-                                                    </div>
-                                            </div>
+                                        </div>
                                     </div>
+                                </div>
                             </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
         </p>
     </div>
     <div
