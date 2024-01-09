@@ -1,74 +1,121 @@
 /* CSS for screens smaller than medium */
 @media (max-width: 767px) {
-    .hide-on-small {
-        display: none;
-    }
+  .hide-on-small {
+    display: none;
+  }
 }
 
 /* CSS for medium screens and larger */
 @media (min-width: 768px) {
-    .show-on-medium {
-        display: block;
-    }
+  .show-on-medium {
+    display: block;
+  }
 }
 
 .hide-on-large {
-    display: block;
-    /* Set the default display property as needed */
+  display: block;
+  /* Set the default display property as needed */
 }
 
 @media (min-width: 1024px) {
-    .hide-on-large {
-        display: none;
-    }
+  .hide-on-large {
+    display: none;
+  }
 }
 
-.custom-text-color {
-    color: #D3956C;
-    /* Replace with your desired color code */
+.custom-brown-text-color {
+  color: #d3956c;
+  /* Replace with your desired color code */
 }
-.custom-text-color {
-    color: #F59F62;
-    /* Replace with your desired color code */
-}.custom-text-color {
-    color: #F2AF42;
-    /* Replace with your desired color code */
-}.custom-text-color {
-    color: #EEBDBE;
-    /* Replace with your desired color code */
-}.custom-text-color {
-    color: #C7E1C3;
-    /* Replace with your desired color code */
+.custom-orange-text-color {
+  color: #f59f62;
+  /* Replace with your desired color code */
 }
-
-.custom-bg-color {
-    background-color: #D3956C;
-    /* Replace with your desired color code */
+.custom-yellow-text-color {
+  color: #f2af42;
+  /* Replace with your desired color code */
 }
-.custom-bg-color {
-    background-color: #F59F62;
-    /* Replace with your desired color code */
+.custom-pink-text-color {
+  color: #eebdbe;
+  /* Replace with your desired color code */
 }
-.custom-bg-color {
-    background-color: #F2AF42;
-    /* Replace with your desired color code */
-}
-.custom-bg-color {
-    background-color: #EEBDBE;
-    /* Replace with your desired color code */
-}
-.custom-bg-color {
-    background-color: #C7E1C3;
-    /* Replace with your desired color code */
+.custom-mint-text-color {
+  color: #c7e1c3;
+  /* Replace with your desired color code */
 }
 
+.custom-white-text-color {
+  color: #faf9f8;
+  /* Replace with your desired color code */
+}
+
+.bg-custom-brown-color {
+  background-color: #d3956c;
+  /* Replace with your desired color code */
+}
+.bg-custom-orange-color {
+  background-color: #f59f62;
+  /* Replace with your desired color code */
+}
+.bg-custom-yellow-color {
+  background-color: #f2af42;
+  /* Replace with your desired color code */
+}
+.bg-custom-pink-color {
+  background-color: #eebdbe;
+  /* Replace with your desired color code */
+}
+.bg-custom-green-color {
+  background-color: #c7e1c3;
+  /* Replace with your desired color code */
+}
+.bg-custom-white-color {
+  background-color: #faf9f8;
+  /* Replace with your desired color code */
+}
+
+.hover\:bg-custom-orange:hover {
+  --tw-bg-opacity: 1;
+  background-color: #f59f62;
+}
+.hover\:bg-custom-brown:hover {
+  --tw-bg-opacity: 1;
+  background-color: #d3956c;
+}
+.hover\:bg-custom-green:hover {
+  --tw-bg-opacity: 1;
+  background-color: #c7e1c3;
+}
+.hover\:bg-custom-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: #faf9f8;
+}
+
+.hover\:bg-custom-pink:hover {
+    --tw-bg-opacity: 1;
+    background-color: #eebdbe;
+  }
+
+.hover\:text-green:hover {
+  --tw-text-opacity: 1;
+  color: #c7e1c3;
+}
+
+.hover\:text-orange:hover {
+    --tw-text-opacity: 1;
+    color: #f59f62;
+  }
+
+.hover\:text-pink:hover {
+--tw-text-opacity: 1;
+color: #eebdbe;
+  }
 .max-h-20 {
-    max-height: 20rem; /* You can adjust the value as needed */
+  max-height: 20rem; /* You can adjust the value as needed */
 }
 .max-h-10 {
-    max-height: 10rem; /* You can adjust the value as needed */
+  max-height: 10rem; /* You can adjust the value as needed */
 }
-
 
 /* pop up substiption */
 /* Add your existing styles here */
@@ -76,29 +123,40 @@
 /* Add your existing styles here */
 
 .modal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 800px;
-    max-height: 800px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    padding: 20px;
-    z-index: 1000;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  max-height: 800px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px;
+  z-index: 1000;
 }
 
 .modal-content {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 30px;
-    cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.instagram-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.instagram-post {
+    width: calc(20% - 10px); /* 20% width with some margin */
+    margin-right: 10px;
 }
