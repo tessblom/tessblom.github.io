@@ -160,3 +160,61 @@ color: #eebdbe;
     width: calc(20% - 10px); /* 20% width with some margin */
     margin-right: 10px;
 }
+
+/* CSS for screens smaller than medium */
+@media (max-width: 767px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+
+/* CSS for medium screens and larger */
+@media (min-width: 768px) {
+    .show-on-medium {
+        display: block;
+    }
+}
+
+.hide-on-large {
+    display: block;
+    /* Set the default display property as needed */
+}
+
+@media (min-width: 1024px) {
+    .hide-on-large {
+        display: none;
+    }
+}
+
+.custom-text-color {
+    color: #178219;
+    /* Replace with your desired color code */
+}
+
+.custom-bg-color {
+    background-color: #D3956C;
+    /* Replace with your desired color code */
+}
+
+@font-face {
+    font-family: 'Margin';
+    src: url('font/margin_demo-webfont.woff') format('woff2'),
+        /* Modern Browsers */
+        url('font/margin_demo-webfont.woff2') format('woff');
+    /* Older Browsers */
+    /* Add more src declarations if needed for different font formats */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Margin', sans-serif;
+    /* Use 'YourFontName' as the font family for the body or any other element */
+}
+
+.h-128 {
+  height: 36rem;
+}
+
+.h-192 {
+  height: 48rem;}

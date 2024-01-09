@@ -3146,7 +3146,12 @@ video {
   .lg\:h-96 {
     height: 24rem;
   }
-
+  .lg\:h-128 {
+    height: 36rem;
+  }
+  .lg\:h-192 {
+    height: 48rem;
+  }
   .lg\:h-auto {
     height: auto;
   }
