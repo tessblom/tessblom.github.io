@@ -15,13 +15,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
 
 
 </head>
 
 <body class="font-sans text-gray-700 antialiased bg-custom-white-color">
     <!-- navbar -->
-    <div class="h-24 z-50 relative container mx-auto px-6 grid grid-cols-3">
+
+
+    <nav class=" top-0 w-full z-20 bg-transparent h-24 z-50 relative container mx-auto px-6">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="images/logo_rond_geel_NL.png" class="py-2 p-2 rounded-full" style="max-height: 150px;">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <div class="flex items-center justify-end">
+                <a href="https://www.instagram.com/goodmorningameland/" class="mr-4 hidden lg:block"
+                    target="_blank">
+                    <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61551525650912" class="mr-4 hidden lg:block"
+                    target="_blank">
+                    <i class="fa fa-facebook-f" style="font-size:48px;color:white"></i>
+                </a>
+            </div>
+            <button data-collapse-toggle="navbar-sticky" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+        </div>
+        <div class="items-center justify-between hidden custom-white-text-color w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky">
+            <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+                <li>
+                    <a href="#" class="block py-2 px-3">lessen</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3">retreats</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3">overmij</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    <!-- This is where the navbar content will be loaded -->
+    <!-- <div id="navbarContainer"></div> -->
+    <!-- <div class="h-24 z-50 relative container mx-auto px-6 grid grid-cols-3">
         <div x-data="{showMenu: false}" class="flex items-center">
             <button x-on:click="showMenu = true">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -31,8 +87,7 @@
                     </path>
                 </svg>
             </button>
-            <!-- menu  -->
-            <div x-show="showMenu" class="fixed inset-0 w-full h-full bg-white z-50 text-yellow-900">
+\            <div x-show="showMenu" class="fixed inset-0 w-full h-full bg-white z-50 text-yellow-900">
                 <div
                     class="container h-full mx-auto px-6 py-8 relative z-10 flex flex-col items-center justify-center text-2xl uppercase font-bold tracking-widest space-y-6 custom-white-text-color">
                     <button x-on:click="showMenu = false" class="absolute top-0 left-0 mt-8 ml-6">
@@ -82,7 +137,7 @@
                 <i class="fa fa-facebook-f" style="font-size:48px;color:white"></i>
             </a>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -103,87 +158,43 @@
         </div>
 
 
-        <div id="newsletterModal" class="modal bg-yellow-50 p-4 rounded-lg shadow-lg">
-            <div class="modal-content text-center">
-                <span class="close custom-yellow-text-color text-lg cursor-pointer absolute top-2 right-2">&times;</span>
-                <img src="images/logo_rond_geel_NL.png" class="py-4 mx-auto" style="max-height: 200px;">
-                <h2 class="text-2xl custom-yellow-text-color font-bold mb-4">Abonneer nu op de geweldegeultrafantastico
-                    nieuwsbrief van tesssebesss!</h2>
-                <form action="https://formspree.io/f/xbjnjwdw" method="POST" class="mt-4 mx-auto max-w-xs">
-                    <div class="mb-4">
-                        <label for="email" class="sr-only">Naam</label>
-                        <input name="message" type="text" placeholder="Naam"
-                            class="w-full rounded-md border-yellow-600 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-500" />
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="sr-only">Email</label>
-                        <input name="email" type="email" placeholder="Email address"
-                            class="w-full rounded-md border-yellow-600 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-500" />
-                    </div>
 
-                    <button type="submit"
-                        class="group flex items-center justify-center rounded-md bg-custom-yellow-color px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-indigo-400 w-full">
-                        <span class="text-sm font-medium"> Registreer </span>
-                        <svg class="ml-3 h-5 w-5 transition-all group-hover:translate-x-2"
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejun="round" stroke-width="2"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                    </button>
-                </form>
-            </div>
-        </div>
-
-
-
-
-
-
-        <!-- Newsletter Subscription Modal
-        <div id="newsletterModal" class="modal">
-            <div class="modal-content max-w-4xl mx-auto rounded-lg bg-indigo-100 shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    class="absolute right-2 top-2 h-6 w-6 cursor-pointer close">&times;</svg>
-                <div class="p-8 md:p-12 lg:px-16">
-                    <div class="max-w-lg">
-                        <h2 class="text-2xl font-bold text-indigo-900 md:text-3xl">Subscribe to stay ahead</h2>
-                        <p class="hidden text-indigo-900 sm:mt-4 sm:block">Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Facere temporibus dicta mollitia!</p>
-                    </div>
-
-                    <div class="mt-8 max-w-xl">
-                        <form action="#" class="sm:flex sm:gap-4">
-                            <div class="sm:flex-1">
-                                <label for="email" class="sr-only">Email</label>
-                                <input type="email" placeholder="Email address"
-                                    class="w-full rounded-md border-indigo-200 bg-white p-3 text-indigo-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-indigo-400" />
-                            </div>
-
-                            <button type="submit"
-                                class="group mt-4 flex w-full items-center justify-center rounded-md bg-indigo-600 px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-indigo-400 sm:mt-0 sm:w-auto">
-                                <span class="text-sm font-medium"> Sign Up </span>
-                                <svg class="ml-3 h-5 w-5 transition-all group-hover:translate-x-2"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-
-
-
-
-
-
-        <img src="images/facebook profile picture tess.jpg" a
-            class="w-full h-full absolute inset-0 object-cover opacity-70">
+        <img src="images/facebook profile picture tess.jpg" alt="Profile Picture"
+            class="w-full h-full absolute inset-0 top-0 object-cover opacity-70">
     </div>
+ 
+    <div id="newsletterModal" class="modal bg-yellow-50 p-4 rounded-lg shadow-lg">
+        <div class="modal-content text-center">
+            <span
+                class="close custom-yellow-text-color text-lg cursor-pointer absolute top-2 right-2">&times;</span>
+            <img src="images/logo_rond_geel_NL.png" class="py-4 mx-auto" style="max-height: 200px;">
+            <h2 class="text-2xl custom-yellow-text-color font-bold mb-4">Abonneer nu op de geweldegeultrafantastico
+                nieuwsbrief van tesssebesss!</h2>
+            <form action="https://formspree.io/f/xbjnjwdw" method="POST" class="mt-4 mx-auto max-w-xs">
+                <div class="mb-4">
+                    <label for="email" class="sr-only">Naam</label>
+                    <input name="message" type="text" placeholder="Naam"
+                        class="w-full rounded-md border-yellow-600 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-500" />
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="sr-only">Email</label>
+                    <input name="email" type="email" placeholder="Email address"
+                        class="w-full rounded-md border-yellow-600 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-500" />
+                </div>
+
+                <button type="submit"
+                    class="group flex items-center justify-center rounded-md bg-custom-yellow-color px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-indigo-400 w-full">
+                    <span class="text-sm font-medium"> Registreer </span>
+                    <svg class="ml-3 h-5 w-5 transition-all group-hover:translate-x-2"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejun="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
     <div class="max-w-xxl mx-auto text-center py-12 md:py-12 bg-custom-white-color">
         <div
             class="flex justify-center items-center text-white uppercase font-bold text-2xl tracking-widest text-center mb-8">
@@ -316,8 +327,8 @@
          -->
     <!-- Replace 'YOUR_INSTAGRAM_USERNAME' with your actual Instagram username -->
     <div class="w-full px-12 pt-12">
-<blockquote class="w-full items-center justify-center h-132 instagram-media" data-instgrm-permalink="https://www.instagram.com/goodmorningameland/"
-        data-instgrm-version="14">
+        <blockquote class="w-full items-center justify-center h-132 instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/goodmorningameland/" data-instgrm-version="14">
         </blockquote>
     </div>
 
@@ -414,10 +425,11 @@
             class="text-sm lg:text-base text-center font-heading font-light tracking-widest uppercase text-white opacity-75 pb-24">
             ©2021 DESIGN BY NOVOLIO. </div> -->
     </div>
-    <!-- Newsletter Subscription Modal -->
-
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="script.js"></script>
+    <!-- Newsletter Subscription Modal -->
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/collect.js/4.18.3/collect.min.js"
         integrity="sha512-LkKpealLJ+RNIuYaXSC+l/0Zf5KjYCpMaUrON9WUC+LG316w3UEImyaUpWMWfqNGC4vLOkxDWEVKQE+Wp0shKg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -426,6 +438,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script async src="https://www.instagram.com/embed.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+
 </body>
 
 </html>

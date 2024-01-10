@@ -1,3 +1,19 @@
+
+// Function to load the navbar content
+function loadNavbar() {
+    // Use fetch to get the content of navbar.html
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            // Insert the content into the navbarContainer div
+            document.getElementById('navbarContainer').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+}
+
+// Call the function to load the navbar when the page loads
+window.onload = loadNavbar;
+
 // // Function to show the modal
 // function showModal() {
 //     document.getElementById('newsletterModal').style.display = 'block';
@@ -91,3 +107,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
