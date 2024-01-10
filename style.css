@@ -49,6 +49,10 @@
   /* Replace with your desired color code */
 }
 
+.md\:custom-white-text-color {
+  color: #faf9f8;
+}
+
 .bg-custom-brown-color {
   background-color: #d3956c;
   /* Replace with your desired color code */
@@ -116,6 +120,7 @@ color: #eebdbe;
 .max-h-10 {
   max-height: 10rem; /* You can adjust the value as needed */
 }
+
 
 /* pop up substiption */
 /* Add your existing styles here */
