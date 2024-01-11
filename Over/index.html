@@ -5,56 +5,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>goodmorning</title>
-    <link rel="stylesheet" type="text/css" href="/app.css">
+    <title>Goodmorning Ameland</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../app.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700&family=Playfair+Display:wght@100;200;300;400;500;600;700&family=Overpass:wght@200;300;400;600;700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
 
 </head>
 
-<body class="font-sans text-gray-700 antialiased bg-white">
-    <div class="h-24 z-50 relative container mx-auto px-6 grid grid-cols-3">
-        <div x-data="{showMenu: false}" class="flex items-center"><button x-on:click="showMenu = true"><svg
-                    class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
-                </svg></button>
-            <div x-show="showMenu" class="fixed inset-0 w-full h-full bg-white z-50 text-yellow-900">
-                <div
-                    class="container h-full mx-auto px-6 py-8 relative z-10 flex flex-col items-center justify-center text-2xl uppercase font-bold tracking-widest space-y-6">
-                    <button x-on:click="showMenu = false" class="absolute top-0 left-0 mt-8 ml-6"><svg class="w-8 h-8"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg></button> <a href="/"
-                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Home</a> <a
-                        href="/products"
-                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Products</a> <a
-                        href="/pages/about-us"
-                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">About</a> <a
-                        href="/blog" class="inline-block border-b-4 border-transparent hover:border-yellow-900">Blog</a>
-                    <a href="/contact"
-                        class="inline-block border-b-4 border-transparent hover:border-yellow-900">Contact</a></div>
-                <div class="absolute inset-0 w-full h-full bg-yellow-900 bg-opacity-20"></div>
+<body class="font-sans text-gray-700 antialiased bg-custom-white-color">
+    <!-- navbar -->
+
+
+    <nav class=" top-0 w-full z-20 bg-transparent h-24 z-50 relative container mx-auto px-6">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="../images/logo_rond_geel_NL.png" class="py-2 p-2 rounded-full" style="max-height: 150px;">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <div class="flex items-center justify-end">
+                <a href="https://www.instagram.com/goodmorningameland/" class="mr-4 hidden lg:block"
+                    target="_blank">
+                    <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61551525650912" class="mr-4 hidden lg:block"
+                    target="_blank">
+                    <i class="fa fa-facebook-f" style="font-size:48px;color:white"></i>
+                </a>
+            </div>
+            <button data-collapse-toggle="navbar-sticky" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm custom-white-text-color rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-white"
+                aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-20 h-20" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+        </div>
+        <div class="items-center justify-between hidden custom-white-text-color w-full md:flex md:w-auto md:order-1 md-bg-white"
+            id="navbar-sticky">
+            <ul
+                class="flex flex-col p-4 md:p-0 mt-4 uppercase font-medium md:space-x-8 md:bg-transparent bg-yellow-50 custom-yellow-text-color  rounded-lg md:text-white rtl:space-x-reverse md:flex-row md:mt-0">
+                <li>
+                    <a href="/" class="inline-block border-b-4 border-transparent hover:border-yellow-900">Thuis
+
+                    </a>                    </li>
+                <li>
+                    <a href="/Lessen" class="inline-block border-b-4 border-transparent hover:border-yellow-900">lessen
+
+                    </a>                </li>
+                <li>
+                    <a href="/Retreats" class="inline-block border-b-4 border-transparent hover:border-yellow-900">events
+
+                    </a>                </li>
+                <li>
+                    <a href="/Over" class="inline-block border-b-4 border-transparent hover:border-yellow-900">over mij
+
+                    </a>                </li>
+                <li>
+                    <a href="/contact" class="inline-block border-b-4 border-transparent hover:border-yellow-900">contact
+
+                    </a>                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    </div> 
+    <div class="-mt-24 relative w-full py-12 px-12 custom-bg-color">
+        <div class="relative z-10 text-center py-24 md:py-48" style="margin-top: 48px;">
+            <h1
+                class="custom-white-text-color text-center text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-bold mb-12">
+                Over mij
+            </h1>
+            
+        </div>
+
+
+
+        <img src="../images/yogatess.jpg" alt="Profile Picture"
+     class="w-full h-full absolute inset-0 top-0 object-cover object-position:70 opacity-70">
+
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class=" p-12 md:p-24 flex justify-end items-center"><a href="/blog/this-is-latest-post/"><img
+                    src="../images/tessalleenlichtervierkant.png" class="w-full max-w-md"></a>
+        </div>
+        <div class="bg-custom-green-color p-12 md:p-24 flex justify-start items-center text-white">
+            <div class="max-w-md">
+                <!-- <div class="w-24 h-2 bg-custom-white-color mb-4"></div> -->
+                <h2 class="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6 font-bold">Over mij</h2>
+                <p class="font-light  text-m md:text-base mb-6 leading-relaxed font-">Ik ben een skotsje en hou heeel veel van poedelen.
+                    je mag me ook wel poedelina noemen zo noemt iedereen me namelijk. 
+                </p><a href="/lessen"
+                    class="inline-block border-2 border-white font-bold text-white text-sm uppercase tracking-widest py-3 px-8 hover:bg-custom-white hover:text-green">lesrooster</a>
             </div>
         </div>
-        <div class="flex items-center justify-center"><a href="/"
-                class="text-white uppercase font-bold text-2xl tracking-widest">impulse</a></div>
-        <div class="flex items-center justify-end"><a href="/cart"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                </svg></a></div>
+
     </div>
-    <div class="w-full h-24 bg-yellow-900 bg-opacity-95 absolute top-0 left-0"></div>
     <div class="text-center py-12 px-6 mt-12">
-        <h1 class="font-display font-bold text-5xl mb-6">The Blog</h1>
-        <p class="max-w-lg mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel arcu commodo,
-            sodales nibh sed, efficitur sapien.</p>
+        <h1 class="font-display font-bold text-5xl mb-6">Ameland</h1>
+        <p class="max-w-lg mx-auto">ameland is kaoloa nice G!</p>
     </div>
     <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 pt-12 pb-24">
         <div><a href="/blog/this-is-latest-post/"><img
@@ -74,6 +136,7 @@
                     </svg></a>
             </div>
         </div>
+        
         <div><a href="/blog/my-third-big-post/"><img
                     src="https://images.unsplash.com/photo-1521145239174-279dc2227166?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
                     class="w-full h-52 md:h-64 lg:h-96 xl:h-64 object-cover"></a>
@@ -109,30 +172,51 @@
         </div>
     </div>
     <div
-        class="bg-gray-900 text-white text-opacity-40 font-semibold uppercase text-xs tracking-widest bg-opacity-80 px-12">
-        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 text-center lg:text-left py-24">
+        class="bg-yellow-100 custom-orange-text-color  text-opacity-40 font-semibold uppercase text-xs tracking-widest bg-opacity-80 px-12">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 text-center lg:text-left py-6">
             <div>
-                <div class="text-white opacity-50 text-4xl font-display">impulse</div>
+                <a href="/"
+                    class="custom-orange-text-color  uppercase font-bold text-2xl tracking-widest hidden lg:block">
+                    <img src="../images/logo_horizontaal2_oranje_NL.png" class="py-4" style="max-height: 200px;">
+                </a>
+                <!-- <div class="text-white opacity-50 text-4xl font-display">goodmorning</div> -->
             </div>
             <div>
-                <div class="font-display text-white uppercase text-sm tracking-widest mb-6">More info</div><a href="#"
-                    class="block mb-4">About</a> <a href="#" class="block mb-4">Info</a> <a href="#"
-                    class="block mb-4">FAQ</a>
+                <div class="font-display custom-orange-text-color  uppercase text-sm tracking-widest mb-6">over</div>
+                <p class="block mb-4">tessebess</p>
+                <p class="block mb-4">ness ameland</p>
+                <p class="block mb-4">+31620255488</p>
+
             </div>
             <div>
-                <div class="font-display text-white uppercase text-sm tracking-widest mb-6">Helpful Links</div><a
-                    href="#" class="block mb-4">About</a> <a href="#" class="block mb-4">Info</a> <a href="#"
-                    class="block mb-4">FAQ</a>
+                <div class="font-display custom-orange-text-color  uppercase text-sm tracking-widest mb-6">Helpful Links
+                </div>
+                <a href="/lessen" class="block mb-4">Lessen</a>
+                <a href="/events" class="block mb-4">Events</a>
+                <a href="/Over/" class="block mb-4">Over</a>
+                <a href="/contact" class="block mb-4">Contact</a>
+
             </div>
             <div>
-                <div class="font-display text-white uppercase text-sm tracking-widest mb-6">Find out more</div><a
-                    href="#" class="block mb-4">About</a> <a href="#" class="block mb-4">Info</a> <a href="#"
-                    class="block mb-4">FAQ</a>
+                <div class="font-display custom-orange-text-color  uppercase text-sm tracking-widest mb-12">Socials
+                </div>
+                <div class="flex items-center justify-center">
+                    <a href="https://www.instagram.com/goodmorningameland/" class="mr-4 block" target="_blank">
+                        <i class="fa fa-instagram" style="font-size:32px;"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61551525650912" class="mr-4 block" target="_blank">
+                        <i class="fa fa-facebook-f" style="font-size:32px;"></i>
+                    </a>
+                    <a href="https://wa.me/123456789" class="block" target="_blank">
+                        <i class="fa fa-whatsapp" style="font-size:32px;"></i>
+                    </a>
+                </div>
+
+
             </div>
         </div>
-        <div
-            class="text-sm lg:text-base text-center font-heading font-light tracking-widest uppercase text-white opacity-75 pb-24">
-            ©2021 DESIGN BY NOVOLIO. IMAGES BY UNSPLASH</div>
+
+
     </div>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/collect.js/4.18.3/collect.min.js"

@@ -65,6 +65,11 @@
   background-color: #f2af42;
   /* Replace with your desired color code */
 }
+.bg-custom-yellow {
+  background: #f2af42 !important;
+  /* Replace with your desired color code */
+}
+
 .bg-custom-pink-color {
   background-color: #eebdbe;
   /* Replace with your desired color code */
@@ -96,9 +101,9 @@
 }
 
 .hover\:bg-custom-pink:hover {
-    --tw-bg-opacity: 1;
-    background-color: #eebdbe;
-  }
+  --tw-bg-opacity: 1;
+  background-color: #eebdbe;
+}
 
 .hover\:text-green:hover {
   --tw-text-opacity: 1;
@@ -106,21 +111,30 @@
 }
 
 .hover\:text-orange:hover {
-    --tw-text-opacity: 1;
-    color: #f59f62;
-  }
+  --tw-text-opacity: 1;
+  color: #f59f62;
+}
 
 .hover\:text-pink:hover {
---tw-text-opacity: 1;
-color: #eebdbe;
-  }
+  --tw-text-opacity: 1;
+  color: #eebdbe;
+}
+
+.focus\:ring-custom-yellow:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: #f2af42;
+}
+.border-custom-yellow {
+  --tw-border-opacity: 1;
+  border-color:#f2af42;
+}
+
 .max-h-20 {
   max-height: 20rem; /* You can adjust the value as needed */
 }
 .max-h-10 {
   max-height: 10rem; /* You can adjust the value as needed */
 }
-
 
 /* pop up substiption */
 /* Add your existing styles here */
@@ -156,65 +170,64 @@ color: #eebdbe;
 }
 
 .instagram-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .instagram-post {
-    width: calc(20% - 10px); /* 20% width with some margin */
-    margin-right: 10px;
+  width: calc(20% - 10px); /* 20% width with some margin */
+  margin-right: 10px;
 }
 
 /* CSS for screens smaller than medium */
 @media (max-width: 767px) {
-    .hide-on-small {
-        display: none;
-    }
+  .hide-on-small {
+    display: none;
+  }
 }
 
 /* CSS for medium screens and larger */
 @media (min-width: 768px) {
-    .show-on-medium {
-        display: block;
-    }
+  .show-on-medium {
+    display: block;
+  }
 }
 
 .hide-on-large {
-    display: block;
-    /* Set the default display property as needed */
+  display: block;
+  /* Set the default display property as needed */
 }
 
 @media (min-width: 1024px) {
-    .hide-on-large {
-        display: none;
-    }
+  .hide-on-large {
+    display: none;
+  }
 }
 
 .custom-text-color {
-    color: #178219;
-    /* Replace with your desired color code */
+  color: #178219;
+  /* Replace with your desired color code */
 }
 
 .custom-bg-color {
-    background-color: #D3956C;
-    /* Replace with your desired color code */
+  background-color: #d3956c;
+  /* Replace with your desired color code */
 }
 
 @font-face {
-    font-family: 'Margin';
-    src: url('font/margin_demo-webfont.woff') format('woff2'),
-        /* Modern Browsers */
-        url('font/margin_demo-webfont.woff2') format('woff');
-    /* Older Browsers */
-    /* Add more src declarations if needed for different font formats */
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Margin";
+  src: url("font/margin_demo-webfont.woff") format("woff2"),
+    /* Modern Browsers */ url("font/margin_demo-webfont.woff2") format("woff");
+  /* Older Browsers */
+  /* Add more src declarations if needed for different font formats */
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'Margin', sans-serif;
-    /* Use 'YourFontName' as the font family for the body or any other element */
+  font-family: "Margin", sans-serif;
+  /* Use 'YourFontName' as the font family for the body or any other element */
 }
 
 .h-128 {
@@ -227,4 +240,5 @@ body {
   height: 38rem;
 }
 .h-192 {
-  height: 48rem;}
+  height: 48rem;
+}
