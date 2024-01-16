@@ -120,6 +120,30 @@
   color: #eebdbe;
 }
 
+.hover\:border-custom-yellow:hover {
+  --tw-border-opacity: 1;
+  border-color:  #f2af42;
+}
+.hover\:border-custom-orange:hover {
+  --tw-border-opacity: 1;
+  border-color:  #f59f62;
+}
+
+.hover\:border-custom-pink:hover {
+  --tw-border-opacity: 1;
+  border-color:  #eebdbe;
+}
+.hover\:border-custom-green:hover {
+  --tw-border-opacity: 1;
+  border-color:  #c7e1c3;
+}
+
+.hover\:border-custom-brown:hover {
+  --tw-border-opacity: 1;
+  border-color:  #d3956c;
+}
+
+
 .focus\:ring-custom-yellow:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: #f2af42;

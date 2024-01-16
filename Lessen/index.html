@@ -62,8 +62,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/Lessen"
-                            class="inline-block border-b-4 border-transparent hover:border-yellow-900">lessen
+                        <a href="/Lessen" class="inline-block border-b-4 border-transparent:custom-yellow">lessen
 
                         </a>
                     </li>
@@ -129,76 +128,41 @@
         <p class="max-w-lg mx-auto">1 juni 2024 beginnen mijn lessen en activiteiten weer.
             <br>l
             Schrijf je in voor mijn nieuwsbrief, om als eerste op de hoogte te zijn!
-        </p>
-        <br>
-        <br>
-        <!DOCTYPE html>
-        <html lang="en">
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Newsletter Signup</title>
-            <link rel="stylesheet" href="styles.css">
-        </head>
-
-        <body>
-            <div class="newsletter-form">
-                <h2>Schrijf je in voor mijn nieuwsbrief!</h2>
-                <form id="signup-form">
-                    <input type="email" id="email" placeholder="Je email adres" required>
-                    <button type="submit">Inschrijven</button>
-                </form>
-                <p id="confirmation-msg" style="display: none;">Bedankt voor je inschrijving!</p>
+    </div>
+    <div class="relative w-full pb-12 px-12">
+        <div class="relative z-10 text-center py-12 md:py-12">
+            <h2 class="font-display font-bold text-2xl md:text-3xl lg:text-4xl mb-6">Stay connected</h2>
+            <p class="font-light  text-sm md:text-base mb- leading-relaxed">Meld je nu aan voor de niewsbrief om op de
+                hoogte te blijven.</p>
+        </div>
+        <form action="https://formspree.io/f/xbjnjwdw" method="POST" class="mt-0 mx-auto max-w-md sm:max-w-md">
+            <div class="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="name" class="sr-only">Naam</label>
+                    <input name="message" type="text" placeholder="Naam"
+                        class="w-full rounded-md border-yellow-600 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-500" />
+                </div>
+                <div>
+                    <label for="email" class="sr-only">Email</label>
+                    <input name="email" type="email" placeholder="Email address"
+                        class="w-full rounded-md border-yellow-600 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-500" />
+                </div>
             </div>
 
-            <script>
-                document.getElementById('signup-form').addEventListener('submit', function (event) {
-                    event.preventDefault(); // Prevent form submission
-                    // Get the email value
-                    const email = document.getElementById('email').value;
+            <button type="submit"
+                class="group flex items-center justify-center rounded-md bg-custom-yellow px-5 py-3 text-white transition focus:outline-none focus:ring focus:ring-indigo-400 w-full">
+                <span class="text-sm font-medium"> Registreer </span>
+                <svg class="ml-3 h-5 w-5 transition-all group-hover:translate-x-2" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejun="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </button>
+        </form>
 
-                    // Here, you can perform additional validation or send the email to a backend for processing
-                    // For now, just display a confirmation message
-                    document.getElementById('signup-form').style.display = 'none'; // Hide the form
-                    document.getElementById('confirmation-msg').style.display = 'block'; // Show the confirmation message
-                });
-            </script>
-        </body>
-
-        </html>
-        <br>
-        <br>
-        <!-- <div class="schedule-container">
-    <h2>Weekly Yoga Class Schedule</h2>
-    <table>
-      <tr>
-        <th>Day</th>
-        <th>Time</th>
-        <th>Class</th>
-        <th>Instructor</th>
-      </tr>
-      <tr>
-        <td>Monday</td>
-        <td>9:00 AM - 10:30 AM</td>
-        <td>Hatha Yoga</td>
-        <td>Tess</td>
-      </tr>
-      <tr>
-        <td>Wednesday</td>
-        <td>6:00 PM - 7:30 PM</td>
-        <td>Vinyasa Flow</td>
-        <td>Anna</td>
-      </tr>
-      <!-- Add more rows for other days and classes -->
-        </table>
-    </div>
 
     </div>
 
-    </div>
-
-    </div>
     <div
         class="bg-yellow-100 custom-orange-text-color  text-opacity-40 font-semibold uppercase text-xs tracking-widest bg-opacity-80 px-12">
         <div class="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 text-center lg:text-left py-6">
@@ -254,6 +218,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js"
         integrity="sha512-06NZg89vaTNvnFgFTqi/dJKFadQ6FIglD6Yg1HHWAUtVFFoXli9BZL4q4EO1UTKpOfCfW5ws2Z6gw49Swsilsg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+
 </body>
 
 </html>
