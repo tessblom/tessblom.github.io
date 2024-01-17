@@ -25,12 +25,51 @@
 
 
     <nav class=" top-0 w-full z-20 bg-custom-yellow-color h-24 z-50 relative  mx-full px-6">
-        <div class=" flex flex-wrap items-left justify-between mx-auto p-4">
+        <div class=" flex flex-wrap items-center justify-between mx-auto p-4">
             <div class="flex items-center justify-start">
-            <a href="/" class="flex items-center justify-start space-x-3 rtl:space-x-reverse  justify-start items-start">
-                <img src="../images/logo_horizontaal_wit_NL.png" class="py-4 p-4 rounded-xl bg-custom-yellow-color" style="max-width: 300px;">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
-            </a>
+                <a href="/"
+                    class="flex items-center justify-start space-x-3 rtl:space-x-reverse   items-start">
+                    <img src="../images/logo_horizontaal_wit_NL.png" class="py-4 p-4 rounded-xl bg-custom-yellow-color"
+                        style="max-width: 300px;">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+                </a>
+            </div>
+
+            <div class="items-center pr-20 justify-center hidden custom-white-text-color w-full lg:flex md:w-auto md:order-1 md-bg-white"
+                id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 uppercase font-medium md:space-x-8 md:bg-transparent bg-yellow-50 custom-yellow-text-color  rounded-lg md:text-white rtl:space-x-reverse md:flex-row md:mt-0">
+                    <li>
+                        <a href="/" class="inline-block border-b-4 border-transparent hover:border-custom-white">Thuis
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Lessen"
+                            class="inline-block border-b-4 border-transparent hover:border-custom-white">lessen
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Retreats"
+                            class="inline-block border-b-4 border-transparent hover:border-custom-white">events
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Over"
+                            class="inline-block border-b-4 border-transparent hover:border-custom-white">over
+                            mij
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact"
+                            class="inline-block border-b-4 border-transparent hover:border-custom-white">contact
+
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <div class="flex items-center justify-end">
@@ -54,41 +93,6 @@
                     </svg>
                 </button>
             </div>
-            <div class="items-center justify-between hidden custom-white-text-color w-full lg:flex md:w-auto md:order-1 md-bg-white"
-                id="navbar-sticky">
-                <ul
-                    class="flex flex-col p-4 md:p-0 mt-4 uppercase font-medium md:space-x-8 md:bg-transparent bg-yellow-50 custom-yellow-text-color  rounded-lg md:text-white rtl:space-x-reverse md:flex-row md:mt-0">
-                    <li>
-                        <a href="/" class="inline-block border-b-4 border-transparent hover:border-custom-white">Thuis
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Lessen"
-                            class="inline-block border-b-4 border-transparent hover:border-custom-white">lessen
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Retreats"
-                            class="inline-block border-b-4 border-transparent hover:border-custom-white">events
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Over" class="inline-block border-b-4 border-transparent hover:border-custom-white">over
-                            mij
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact"
-                            class="inline-block border-b-4 border-transparent hover:border-custom-white">contact
-
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
@@ -109,11 +113,11 @@
             class="w-full h-full absolute inset-0 top-0 object-cover opacity-70">
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2">
-        
+
         <div class=" p-12 md:p-24 flex justify-end items-center">
-            
+
             <form action="https://formspree.io/f/xbjnjwdw" method="POST" class="mt-0 mx-auto max-w-full">
-                
+
 
                 <div class="mb-4">
                     <label for="name" class="sr-only">Naam</label>
@@ -125,27 +129,28 @@
                     <input name="email" type="email" placeholder="Email address"
                         class="w-full rounded-md border-yellow-600 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-500" />
                 </div>
-            
+
                 <div class="mb-4">
                     <label for="phone" class="sr-only">Phone (optional)</label>
                     <input name="phone" type="tel" placeholder="Phone (optional)"
                         class="w-full rounded-md border-yellow-600 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-500" />
                 </div>
-            
+
                 <label for="message" class="sr-only mb-4">Message</label>
                 <textarea name="message" placeholder="Your message"
                     class="w-full rounded-md border-yellow-600 bg-white p-3 text-gray-700 shadow-sm transition focus:border-white focus:outline-none focus:ring focus:ring-yellow-500"></textarea>
-            
+
                 <button type="submit"
                     class="group flex items-center justify-center rounded-md bg-custom-yellow px-5 py-3 mt-4 text-white transition focus:outline-none focus:ring focus:ring-yellow-500 w-full">
                     <span class="text-sm font-medium"> Registreer </span>
-                    <svg class="ml-3 h-5 w-5 transition-all group-hover:translate-x-2" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    <svg class="ml-3 h-5 w-5 transition-all group-hover:translate-x-2"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
                 </button>
             </form>
-            
+
 
         </div>
 
