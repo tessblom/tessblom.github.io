@@ -70,6 +70,11 @@
   /* Replace with your desired color code */
 }
 
+.bg-custom-newgreen {
+  background: #adc6a8 !important;
+  /* Replace with your desired color code */
+}
+
 .bg-custom-pink-color {
   background-color: #eebdbe;
   /* Replace with your desired color code */
@@ -118,6 +123,11 @@
 .hover\:text-pink:hover {
   --tw-text-opacity: 1;
   color: #eebdbe;
+}
+
+.hover\:border-custom-white:hover {
+  --tw-border-opacity: 1;
+  border-color:  #faf9f8;
 }
 
 .hover\:border-custom-yellow:hover {
@@ -265,4 +275,15 @@ body {
 }
 .h-192 {
   height: 48rem;
+}
+
+@font-face {
+  font-family: 'MarginDemoWebfront';
+  src: url('font/margin_demo-webfont.woff') format('woff');
+  /* Add additional font formats (e.g., woff2, ttf) for better browser support */
+}
+
+.custom-font {
+  font-family: 'MarginDemoWebfront', sans-serif;
+  letter-spacing: 2pt; /* Adjust the letter spacing */
 }
