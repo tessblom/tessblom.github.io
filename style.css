@@ -4,6 +4,9 @@
     display: none;
   }
 }
+.font-Montserrat {
+  font-family: "Montserrat", serif;
+}
 
 /* CSS for medium screens and larger */
 @media (min-width: 768px) {
@@ -87,6 +90,10 @@
   background-color: #faf9f8;
   /* Replace with your desired color code */
 }
+.bg-sandgray {
+  background-color: #a7a18f;
+  /* Replace with your desired color code */
+}
 
 .hover\:bg-custom-orange:hover {
   --tw-bg-opacity: 1;
@@ -127,32 +134,31 @@
 
 .hover\:border-custom-white:hover {
   --tw-border-opacity: 1;
-  border-color:  #faf9f8;
+  border-color: #faf9f8;
 }
 
 .hover\:border-custom-yellow:hover {
   --tw-border-opacity: 1;
-  border-color:  #f2af42;
+  border-color: #f2af42;
 }
 .hover\:border-custom-orange:hover {
   --tw-border-opacity: 1;
-  border-color:  #f59f62;
+  border-color: #f59f62;
 }
 
 .hover\:border-custom-pink:hover {
   --tw-border-opacity: 1;
-  border-color:  #eebdbe;
+  border-color: #eebdbe;
 }
 .hover\:border-custom-green:hover {
   --tw-border-opacity: 1;
-  border-color:  #c7e1c3;
+  border-color: #c7e1c3;
 }
 
 .hover\:border-custom-brown:hover {
   --tw-border-opacity: 1;
-  border-color:  #d3956c;
+  border-color: #d3956c;
 }
-
 
 .focus\:ring-custom-yellow:focus {
   --tw-ring-opacity: 1;
@@ -160,7 +166,7 @@
 }
 .border-custom-yellow {
   --tw-border-opacity: 1;
-  border-color:#f2af42;
+  border-color: #f2af42;
 }
 
 .max-h-20 {
@@ -278,12 +284,12 @@ body {
 }
 
 @font-face {
-  font-family: 'MarginDemoWebfront';
-  src: url('font/margin_demo-webfont.woff') format('woff');
+  font-family: "MarginDemoWebfront";
+  src: url("font/margin_demo-webfont.woff") format("woff");
   /* Add additional font formats (e.g., woff2, ttf) for better browser support */
 }
 
 .custom-font {
-  font-family: 'MarginDemoWebfront', sans-serif;
+  font-family: "MarginDemoWebfront", sans-serif;
   letter-spacing: 2pt; /* Adjust the letter spacing */
 }
