@@ -46,6 +46,10 @@
   color: #c7e1c3;
   /* Replace with your desired color code */
 }
+.text-custom-green {
+  color: #adc6a8;
+  /* Replace with your desired color code */
+}
 
 .custom-white-text-color {
   color: #faf9f8;
@@ -152,7 +156,7 @@
 }
 .hover\:border-custom-green:hover {
   --tw-border-opacity: 1;
-  border-color: #c7e1c3;
+  border-color: #adc6a8;
 }
 
 .hover\:border-custom-brown:hover {
@@ -167,7 +171,15 @@
 .border-custom-yellow {
   --tw-border-opacity: 1;
   border-color: #f2af42;
+  
 }
+.border-custom-green {
+  --tw-border-opacity: 1;
+  border-color: #adc6a8;
+}
+.border-custom-pink {
+  --tw-border-opacity: 1;
+  border-color: #eebdbe;}
 
 .max-h-20 {
   max-height: 20rem; /* You can adjust the value as needed */
