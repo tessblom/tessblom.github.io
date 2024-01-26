@@ -107,4 +107,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+document.addEventListener('DOMContentLoaded', function () {
+    var menuToggleButton = document.getElementById('menuToggleButton');
 
+    menuToggleButton.addEventListener('click', function () {
+        // Toggle the 'hidden' class on the button
+        menuToggleButton.classList.toggle('hidden');
+    });
+});
