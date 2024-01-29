@@ -115,3 +115,66 @@ document.addEventListener('DOMContentLoaded', function () {
         menuToggleButton.classList.toggle('hidden');
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var openTosLink = document.getElementById("openTosLink");
+    var tos = document.getElementById("tos");
+    var closeTosBtn = document.getElementById("closeTosBtn");
+
+    openTosLink.onclick = function (event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        tos.style.display = "block";
+    };
+
+    closeTosBtn.onclick = function () {
+        tos.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+        if (event.target == tos) {
+            tos.style.display = "none";
+        }
+    };
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     var openTosLink = document.getElementById("openTosLink");
+//     var tos = document.getElementById("tos");
+//     var closeTosBtn = document.getElementById("closeTosBtn");
+
+//     openTosLink.onclick = function (event) {
+//         event.preventDefault(); // Prevent the default behavior of the link
+//         tos.style.display = "block";
+//     };
+
+//     closeTosBtn.onclick = function () {
+//         tos.style.display = "none";
+//     };
+
+//     window.onclick = function (event) {
+//         if (event.target == tos) {
+//             tos.style.display = "none";
+//         }
+//     };
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var openprivacyLink = document.getElementById("openprivacyLink");
+    var privacy = document.getElementById("privacy");
+    var closeprivacyBtn = document.getElementById("closeprivacyBtn");
+
+    openprivacyLink.onclick = function (event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        privacy.style.display = "block";
+    };
+
+    closeprivacyBtn.onclick = function () {
+        privacy.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+        if (event.target == privacy) {
+            privacy.style.display = "none";
+        }
+    };
+});
