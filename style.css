@@ -360,3 +360,17 @@ body {
   max-height: 80%; /* Set a maximum height */
   overflow-y: auto; /* Add scrollbars when content exceeds max-height */
 }
+table {
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
