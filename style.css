@@ -324,14 +324,19 @@ body {
   background-color: #fff;
   padding: 20px;
   text-align: center;
+  max-height: 80%; /* Set a maximum height */
+  overflow-y: auto; /* Add scrollbars when content exceeds max-height */
 }
 
 .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   font-size: 20px;
+  color: white;
   cursor: pointer;
+  position: absolute;
+  top: -20px; /* Adjust this value to move the close button above the window */
+  right: 10px;
+  background-color: #333;
+  padding: 10px;
 }
 
 .privacy {
@@ -345,11 +350,13 @@ body {
 }
 
 .privacy-content {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   padding: 20px;
   text-align: center;
+  max-height: 80%; /* Set a maximum height */
+  overflow-y: auto; /* Add scrollbars when content exceeds max-height */
 }
