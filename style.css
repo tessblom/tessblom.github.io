@@ -328,16 +328,7 @@ body {
   overflow-y: auto; /* Add scrollbars when content exceeds max-height */
 }
 
-.close {
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: -20px; /* Adjust this value to move the close button above the window */
-  right: 10px;
-  background-color: #333;
-  padding: 10px;
-}
+/* .close */
 
 .privacy {
   display: none;
